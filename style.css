@@ -76,7 +76,7 @@ div.burger {
 		        transition: all 100ms ease-out;					
 	}
 
-div.navbar{ top: -1px; position: absolute; height:120px;background:#385e97;}
+div.navbar{ top: -1px; position: relative; height:120px;background:#385e97;}
 
 div.circle{	
 	border-radius: 50%;
