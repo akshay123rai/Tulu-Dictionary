@@ -245,9 +245,10 @@ span{
 .search-icon{
   top: 22px;
   right: 7px;
-		position: absolute;
+        position: relative;
  	algn-items: right;
  	height: 90px;
+       z-index: 1;
 }
 
 
