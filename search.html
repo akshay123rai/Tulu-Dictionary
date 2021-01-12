@@ -1,0 +1,68 @@
+<head>
+				<link rel="stylesheet" type="text/css" href="./style.css">
+				
+</head>
+<body>
+				<div class="menu2">
+								<a href="./index.html">
+								<img src="./images/home.png" class="home-icon">
+								</a>
+				</div>
+		<div class="bglogo">
+				<img src="./images/logo.png" class="logo">
+			</div>
+<div class="row">
+						<div class="col-md-7 mb-2 mb-md-0">
+							<input type="text" class="form-control form-control-lg innersearch" placeholder="Search in tulu using kannada script" id="mysearch" onkeyup="myFunction()">
+						</br>
+						</br>
+							<div class="search-result">
+								<ul id="bing-search">
+         <li><a href="#">ಅಲೆಗ್</a></li>
+									<li><a href="#">ಆಯೆ</a></li>
+         <li><a href="#">ಆಲ್</a></li>
+         <li><a href="#">ಇಲ್ಲ್</a></li>
+									<li><a href="#">ಈ</a></li>
+         <li><a href="#">ಎಂಕ್</a></li>
+         <li><a href="#">ಎಂಚ</a></li>
+         <li><a href="#">ಎರ್ಮೆ</a></li>
+         <li><a href="#">ಒಲ್ಪ</a></li>
+         <li><a href="#">ಕಣ್ಣ್</a></li>
+         <li><a href="#">ಕುಂಟು</a></li>
+         <li><a href="#">ದಾಯೆ</a></li>
+         <li><a href="#">ನಿಕ್ಕ್</a></li>
+         <li><a href="#">ಪೋಪೆ</a></li>
+         <li><a href="#">ಬರ್ಪೆ</a></li>
+         <li><a href="#">ಬೇನೆ</a></li>
+         <li><a href="#">ಮದಿಮೆ</a></li>
+         <li><a href="#">ಮರ್ಲೆ</a></li>
+									<li><a href="./words/yanA.html">ಯಾನ್</a></li>
+       	<h4>no more...</h4>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+</div>
+<script>
+				function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('mysearch');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("bing-search");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+</body>

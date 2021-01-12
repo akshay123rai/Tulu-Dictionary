@@ -1,0 +1,56 @@
+/** Search Result **/
+.search-result {
+    position: relative;
+}
+.search-result ul {
+    padding: 0px;
+    position: absolute;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    top: -5px;
+    width: 90%;
+    z-index: 999;
+}
+.search-result ul li a {
+    background-color: #ADD8E6;
+    color: #444;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 500;
+    border-top: 1px solid #3333;
+    width: 90%;
+}
+.search-result ul li a:hover {
+	background: yellow;
+	text-decoration: none;
+}
+.search-result ul li {
+	text-align: left;
+}
+
+input{
+  width: 96%;
+  height: 7%;
+}
+
+.black{
+  border: 5px solid black;
+  height: 140%;
+ }
+ 
+ .logo{
+ 			width: 70%;
+ 			display: block;
+ 			margin-left: auto;
+    margin-right: auto;
+ }
+ 
+.bglogo{
+    background: yellow;
+    background-size: 80px 80px;
+ }
+body {
+				padding: 1px;
+}
+
