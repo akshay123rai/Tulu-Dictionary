@@ -184,6 +184,7 @@ div.menu li.animate:nth-of-type(6){
     background: #ADD8E6;
     top: -100px;
     position: relative;
+    z-index: -1;
  }
 
 .black{
