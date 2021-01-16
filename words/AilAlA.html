@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>		<link rel="stylesheet" type="text/css" href="../style.css">
+<meta charset="UTF-8"> 
+				<title>ಇಲ್ಲ್</title>
+</head>
+<body>
+              	<div class="navbar"></div>
+        	<div class="list">
+            	<div class="item">
+            </div>
+        
+	        <div class="circle"></div>
+			<div class="menu">
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">Open in Github</a></li>
+     <li><a href="./search.html">Search</a></li>
+     <li><a href="">Help</a></li>
+     <li><a href="../pages/suggestion.html">Give us suggestion</a></li>
+				</ul>
+			</div>			            
+			<div class="burger">
+				<div class="x"></div>
+				<div class="y"></div>
+                <div class="z"></div>
+			</div>    
+
+		</div>	
+			<div class="bglogo">
+				<img src="../images/logo.png" class="logo">
+			</div>
+			</br>
+			<div class="black center">
+							<h1 class="blackword">ಇಲ್ಲ್</h1>
+							<div class="english-tulu"><a>aal</a></div>
+							
+							
+							<div class="blackline"></div>
+							<h2 class="blackword">ಮನೆ/home</h2>
+							<div class="blackline"></div>
+							<h4 class="blackword"> ಅವ್ ಎದುರುದ ಇಲ್ಲ್ ನಮ್ಮವೆ.</h4>
+			</div>
+			</br>
+	<div class="black">
+					<div class="redbg">
+					<h1 class="center" id="random"> Random Word </h1>
+				</div>
+ <h2 id="word"></h2> <h3 id="definition" class="center"></h3>
+ <p id="tulu"></p>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+								
+var dictionary = [ 
+
+{word: 'ಉದಾರ್ಮೆ', definition: ' Example, ಉದಾಹರಣೆ', tulu: 'ಯಾನ್ ನಿಕ್ಕ್ ಕೆಲವು ಉದಾರ್ಮೆಲೆನ್ ಕೊರ್ಪೆ'}, 
+
+{word: 'ಒತ್ತುಪಾಲ್', definition: 'Presence, ಉಪಸ್ಥಿತಿ', tulu: 'ಇಣಯೊಡು ಇರೆನ/ನಿಕ್ಲೆನ ಒತ್ತುಪಾಲ್‌ನ್ ಬಯಕೊಂದುಲ್ಲ'}, 
+
+{word: 'ಇಣಯೊ', definition: 'meeting, ಸಭೆ', tulu: 'ಆಯೆ ಕೋಡೆದ ಇಣಯೊಡು ಪಾಲ್‌ಪಡೆದ್‌ಜೆ'}, 
+
+{word: 'Internet', definition: 'A series of tubes', tulu: 'a'},
+
+{word: 'Internet', definition: 'A series of tubes', tulu: 'a'}, 
+
+]; 
+
+(function(){ 
+
+var selection = dictionary[Math.floor(Math.random()*dictionary.length)]; 
+
+for (var key in selection){ 
+
+document.getElementById(key).innerHTML = selection[key]; 
+
+} 
+
+return; 
+
+})(); 
+
+			
+	if( 'ontouchstart' in window ){ var click = 'touchstart'; }
+	else { var click = 'click'; }
+
+
+	$('div.burger').on(click, function(){
+
+			if( !$(this).hasClass('open') ){ openMenu(); } 
+			else { closeMenu(); }
+
+	});
+	
+
+	$('div.menu ul li a').on(click, function(e){
+		e.preventDefault();
+		closeMenu();
+	});		
+
+
+	function openMenu(){
+		
+		$('div.circle').addClass('expand');
+					
+		$('div.burger').addClass('open');	
+		$('div.x, div.y, div.z').addClass('collapse');
+		$('.menu li').addClass('animate');
+		
+		setTimeout(function(){ 
+			$('div.y').hide(); 
+			$('div.x').addClass('rotate30'); 
+			$('div.z').addClass('rotate150'); 
+		}, 70);
+		setTimeout(function(){
+			$('div.x').addClass('rotate45'); 
+			$('div.z').addClass('rotate135');  
+		}, 120);
+		
+		
+
+	}
+	
+	function closeMenu(){
+
+		$('div.burger').removeClass('open');	
+		$('div.x').removeClass('rotate45').addClass('rotate30'); 
+		$('div.z').removeClass('rotate135').addClass('rotate150');				
+		$('div.circle').removeClass('expand');
+		$('.menu li').removeClass('animate');
+		
+		setTimeout(function(){ 			
+			$('div.x').removeClass('rotate30'); 
+			$('div.z').removeClass('rotate150'); 			
+		}, 50);
+		setTimeout(function(){
+			$('div.y').show(); 
+			$('div.x, div.y, div.z').removeClass('collapse');
+		}, 70);													
+		
+	}
+
+
+</script>
+
+</body>
+</html>
