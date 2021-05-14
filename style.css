@@ -1,3 +1,8 @@
+@font-face{
+				font-family: 'baravu';
+				src: url(./fonts/baravu.ttf);
+}
+
 /* menu */
 
 div.burger {
@@ -6,6 +11,7 @@ div.burger {
 	position: absolute;
 	top: 17px; 
 	left: 21px;
+	z-index: 0;
 }
 	div.x,
 	div.y,
@@ -114,7 +120,7 @@ div.menu {
 div.menu ul li {
 	list-style: none;
 	position:absolute;
-	top:30px;
+	top: 60px;
 	left:0;
 	opacity:0;
 	width:560px;
@@ -182,14 +188,22 @@ div.menu li.animate:nth-of-type(6){
  
 .bglogo{
     background: #ADD8E6;
-    top: -100px;
     position: relative;
+    top: -100px;
     z-index: -1;
  }
+
+.bglogo2{
+    background-color: #ADD8E6;
+ }
+
 
 .black{
   border: 2px solid black;
   background: #ADD8E6;
+    position: relative;
+    top: -100px;
+    z-index: -1;  
 }
 
 h1{
@@ -238,10 +252,7 @@ p {
 .top{
   padding-top: -10;
 }
-span{
-		position: absolute;
-		top: -10px;		
-}
+
 .blackword{
 		color: black;
 }
@@ -259,9 +270,14 @@ span{
 .search-result {
     position: relative;
 }
+.search-result h4{
+				color: black;
+				font-size: 50px;
+				margin: 0 0;
+}
 .search-result ul {
     padding: 0px;
-    position: absolute;
+    position: relative;
     background: #fff;
     margin: 0;
     list-style: none;
@@ -272,13 +288,14 @@ span{
     left: 2px;
 }
 .search-result ul li a {
-    background-color: #ADD8E6;
+    background-color: #80FFDB;
     color: #444;
     padding: 5px 10px;
     display: inline-block;
     font-weight: 500;
     border-top: 1px solid #3333;
     width: 98%;
+ 	  text-decoration: none;
 }
 .search-result ul li a:hover {
 	background: yellow;
@@ -311,4 +328,41 @@ input{
 }
 #random{
 		font-size: 120px;
+}
+.bottom{
+		background-image: linear-gradient(to bottom right, #ADD8E6, #00F5D4);
+}
+.search-help{
+		background: black;
+}
+.search-help p{
+  padding: 50px 50px;
+		font-size: 40px;
+		color: #80FFDB;
+}
+.english-tulu{
+		position: relative;
+		top: -35px;
+}
+
+.english-tulu a{
+		font-size: 40px;
+}
+.search-suggest{
+		font-size: 50px;
+		background: black;
+		text-align: center;
+		radius: 100px;
+}
+.search-suggest a{
+ 	text-decoration: none;
+		color: #80FFDB;
+		padding: 20px 20px;
+}
+.tululipi{
+		font-family: baravu;
+		font-size: 70px;
+}
+.kan{
+		top: -20px;
 }
