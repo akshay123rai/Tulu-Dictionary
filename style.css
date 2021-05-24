@@ -345,16 +345,17 @@ input{
 		height: 95px;
 }
 #word{
-				font-size: 70px;
+				font-size: 50px;
+				
 }
 #tulu{
-		font-size: 50px;
+		font-size: 40px;
 }
 #definition{
-			font-size: 60px;
+			font-size: 50px;
 }
-#random{
-		font-size: 100px;
+.random{
+		font-size: 70px;
 }
 .bottom{
 		background-image: linear-gradient(to bottom right, #ADD8E6, #00F5D4);
@@ -420,7 +421,7 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color: #24262b;
+    background-color: #ADD8E6;
     padding: 70px 0;
     bottom: -10px;
     position: relative;
@@ -430,8 +431,8 @@ ul{
    padding: 0 15px;
 }
 .footer-col h4{
-    font-size: 18px;
-    color: #ffffff;
+    font-size: 30px;
+    color: black;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -451,24 +452,24 @@ ul{
     margin-bottom: 10px;
 }
 .footer-col ul li a{
-    font-size: 16px;
+    font-size: 26px;
     text-transform: capitalize;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none; 
     font-weight: 300;
-    color: #bbbbbb;
+    color: black;
     display: block;
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #ffffff;
+    color: red;
     padding-left: 8px;
 }
 .footer-col .social-links a{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: black;
     margin:0 10px 10px 0;
     text-align: center;
     line-height: 40px;
