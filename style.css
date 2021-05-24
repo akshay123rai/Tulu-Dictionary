@@ -421,7 +421,8 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color: #ADD8E6;
+    border: 2px solid black;
+    background-color: #6ae0ff;
     padding: 70px 0;
     bottom: -10px;
     position: relative;
