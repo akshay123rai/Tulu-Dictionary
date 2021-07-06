@@ -20,12 +20,12 @@
 	        <div class="circle"></div>
 			<div class="menu">
 				<ul>
-					<li><a href="">Contact Us</a></li>
-					<li><a href="">all words</a></li>
-     <li><a href="./search.html">Search</a></li>
-     <li><a href="./pages/suggestion.html">suggestion</a></li>
-     <li><a href="">Help</a></li>
-     	<li><a href="">About Us</a></li>
+					<li><a href="">Home</a></li>
+			  <li><a href="./search.html">Search</a></li>  
+     	<li><a href="">all articles/ writings</a></li>
+     	<li><a href="">all poems</a></li>
+     	<li><a href="">tulu books</a></li>
+     	<li><a href="">jai tulunad</a></li>
 				</ul>
 			</div>			            
 			<div class="burger">
@@ -53,15 +53,7 @@
 			</div>
 			
 			
-			<!-- random word -->
-	<div class="black">
-					<div class="redbg">
-					<h1 class="center random" id="random"> Random Word </h1>
-				</div>
- <h2 id="word"></h2> <h3 id="definition" class="center"></h3>
- <p id="tulu"></p>
- </div>
- </div>
+		
  
  <!-- footer -->
  
@@ -113,32 +105,6 @@
  <!-- js script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
-	/* Random Word */					
-var dictionary = [ 
-
-{word: 'ಉದಾರ್ಮೆ', definition: ' Example, ಉದಾಹರಣೆ', tulu: 'ಯಾನ್ ನಿಕ್ಕ್ ಕೆಲವು ಉದಾರ್ಮೆಲೆನ್ ಕೊರ್ಪೆ'}, 
-
-{word: 'ಒತ್ತುಪಾಲ್', definition: 'Presence, ಉಪಸ್ಥಿತಿ', tulu: 'ಇಣಯೊಡು ಇರೆನ/ನಿಕ್ಲೆನ ಒತ್ತುಪಾಲ್‌ನ್ ಬಯಕೊಂದುಲ್ಲ'}, 
-
-{word: 'ಇಣಯೊ', definition: 'meeting, ಸಭೆ', tulu: 'ಆಯೆ ಕೋಡೆದ ಇಣಯೊಡು ಪಾಲ್‌ಪಡೆದ್‌ಜೆ'}, 
-
-]; 
-
-(function(){ 
-
-var selection = dictionary[Math.floor(Math.random()*dictionary.length)]; 
-
-/*menu*/
-for (var key in selection){ 
-
-document.getElementById(key).innerHTML = selection[key]; 
-
-} 
-
-return; 
-
-})(); 
-
 <!-- menu -->
 			
 	if( 'ontouchstart' in window ){ var click = 'touchstart'; }
