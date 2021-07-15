@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+		<style>
+				#div20{
+		display: none;
+}
+		</style>
 				<link rel="stylesheet" type="text/css" href="../style.css">
 <meta charset="UTF-8"> 
 <meta name = "viewport" content = "user-scalable=no">
@@ -44,7 +49,9 @@
 			</div>
 		
  <!-- main -->
- <div class="article"><br><br>
+ 
+ <div class="article" id="div10"><br><br>		<button onclick="show1()" style="background: yellow; font-size: 25px;">Change to Tulu script</button>
+ 
  <div class="redbg2">
  <h1>ಜೈ ತುಲುನಾಡ್</h1>
  <h3>
@@ -92,7 +99,7 @@
 ಬೇಲೆ ಮಲ್‌ಪೂವೆರ್<br>
           ಪೆರ್ಮೆಡ್ ಬೇಲೆ ಮಲ್‌ಪೂವೆರ್<br>
 <br>
-</p><div class="author">
+*✍ಗೀತಾ ಲಕ್ಷ್ಮೀಶ್*</p><div class="author">
 				<h2 style="text-align: left;">✍Poet:</h2>
 				<div style="text-align: left;">
  				<img src="../images/authors/author-1.jpg" alt="" height="150px"></div>
@@ -103,9 +110,69 @@
  
  </div>
  
+ <!-- tululipi -->
  
  
  
+  <div class="article" style="font-family: baravu;" id="div20"><br><br>
+ 		<button onclick="show2()" style="background: yellow; font-size: 25px;">Change to Kannada script</button>
+ <div class="redbg2">
+ 		
+ <h1>eej tulunawA</h1>
+ <h3>
+                    (eAnAn epemf)
+</h3><br>
+</div>
+<p>
+tuluv nawAXd<br>
+ptAtepAp Fjakulu<br>
+kUq mlAXtAXEdrA<br>
+tuluv AAepApnA <br>
+siMgar mlAtudu<br>
+EtrAXwA eAayipuevrA<br>
+          ebalAli EtrAXnA eAayipuevrA<br>
+<br>
+nMji nrkew<br>
+jnkAXl nwutu<br>
+lkAkXdA AuMtuEdrA<br>
+hLALi hLALiwA<br>
+AUru EpMeqwA<br>
+AAepApnA emerpevrA<br>
+         emakulu AAepApnA emerpevrA<br>
+<br>
+ebcAc enetAtrAXd<br>
+jvenrA emakulu<br>
+setAyagu bgAguevrA<br>
+puwmi AAepApn<br>
+ebsrA kelyer<br>
+ebgrA sIMquevrA<br>
+          kusiqA ebgrA sIMquevrA<br>
+
+kxAq nxAqd<br>
+Fyacen mlApMed<br>
+AiexAqawu FsaMduevrA<br>
+AAepAp baeSgA <br>
+jIv tuMbudu<br>
+FmaekwA klApaevrA<br>
+          emakulu FmaekwA klApaevrA<br>
+<br>
+tuluv BaeSd<br>
+lipinA buelpin<br>
+knnA kqAqAXEdrA<br>
+AilfA epglAXnA<br>
+eAaMji mlAtudu<br>
+Ebel mlAXpUevrA<br>
+          epemfwA Ebel mlAXpUevrA<br>
+<br></p><div class="author">
+				<h2 style="text-align: left;">✍Poet:</h2>
+				<div style="text-align: left;">
+ 				<img src="../images/authors/author-1.jpg" alt="" height="150px"></div>
+ 				<h3>gIta lkAxAmISA</h3>
+ 				<h6 style="font-family: serif;">Email: example@gmail.com</h6>
+ </div>
+ </br>
+ </div>
+ </div>
  
  
  <!-- footer -->
@@ -225,6 +292,17 @@
 		
 	}
 
+
+
+<!-- tululipi to English -->
+function show1(){
+				document.getElementById('div10').style.display = "none";
+		document.getElementById('div20').style.display = "block";
+		}
+		function show2(){
+					document.getElementById('div10').style.display = "block";
+		document.getElementById('div20').style.display = "none";
+		}
 
 </script>
 			
