@@ -1,3 +1,4 @@
+@media (max-width: 768px){
 @font-face{
 				font-family: 'baravu';
 				src: url(./fonts/baravu.ttf);
@@ -780,7 +781,7 @@ text-shadow: 2px 2px #00ffff;
 }
 
 
-
+}
 
 
 
