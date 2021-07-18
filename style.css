@@ -194,7 +194,7 @@ div.menu li.animate:nth-of-type(6){
 			
 }
 
-.menu3{display: none;}
+
 /* menu end*/
 .logo{
  		 width: 75%;
@@ -361,10 +361,7 @@ input{
   font-size: 30px;
 }
 
-.menu2{
-				background: #4a89dc;
-				height: 100px;
-}
+
 .home-icon{
   position: relative;
 		height: 95px;
@@ -429,10 +426,7 @@ input{
 /* footer */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-}
+
 .container{
     max-width: 1170px;
     margin:auto;
@@ -787,7 +781,7 @@ text-shadow: 2px 2px #00ffff;
 
 /*media queries*/
 
-@media screen and (min-width: 800px){
+@media (min-width: 900px){
 			@font-face{
 				font-family: 'baravu';
 				src: url(./fonts/baravu.ttf);
