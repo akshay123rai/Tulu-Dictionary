@@ -787,7 +787,7 @@ text-shadow: 2px 2px #00ffff;
 
 /*media queries*/
 
-@media screen and (min-screen-width: 768px){
+@media screen and (min-screen-width: 1200px){
 			@font-face{
 				font-family: 'baravu';
 				src: url(./fonts/baravu.ttf);
