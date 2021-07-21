@@ -4,12 +4,22 @@
 				<link rel="stylesheet" type="text/css" href="./style.css">
 <meta charset="UTF-8"> 
 <meta name = "viewport" content = "user-scalable=no">
-<meta name = "viewport" content = "width=device-width, initial scale=1.0">
-  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 				<title>Tulu Dictionary</title>
 </head>
-<body>
+<body>I
+		
+		<!-- loading -->
+		    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+<!-- end -->
+		
+		
+		
+		
 				<div class="center">
 				<div class="search-icon">   
    <a href="./search.html"><img src="./images/search-icon.png" class="search-icon"></a></div>  
@@ -23,8 +33,8 @@
 				<ul>
 					<li><a href="">Home</a></li>
 			  <li><a href="./search.html">Search</a></li>  
-     	<li><a href="./baravu.html">all articles/ writings</a></li>
-     	<li><a href="./poems/poems.html">all poems</a></li>
+     	<li><a href="./baravu.html">tulu articles/ writings</a></li>
+     	<li><a href="./poems/poems.html">tulu poems</a></li>
      
      	<li><a href="">tulu books</a></li>
      	
@@ -39,15 +49,11 @@
 			</div>			    
 		</div>
 		
-		<!-- logo -->
-			<div class="bglogo">
-				<img src="./images/logo.png" class="logo">
-			</div>
 			<div class="center">
 			<div class="welcome">
 	<h1 class="center redbg">Introduction</h1>
 <br>	<h4>English</h4>
-	<p>Welcome you to our website. You can read and submit your articles or poems by filling form in 'submit your article/poem'. If you can read Tuluscript you can open a article and chng it into Tulu Script.</p>
+	<p>Welcome you to our website. You can read and submit your articles or poems by filling form in 'submit your article/ poem'. If you can read Tuluscript you can open a article and chng it into Tulu Script. </p>
 	<br><br>
 <h4>	ತುಲು/ತುಳು</h4>
 	<p>ಮೋಕೆಡ್ ಎದುಕೊನುವ. ನಿಕ್ಲೆಗ್ ಮುಲ್ಪ ಓದೆರೆ ಬರವು ಬೊಕ ಕಬಿತೆ ತಿಕ್ಕುಂಡು. ನಿಕುಲ್ ಬರೆತಿನ ಕಬಿತೆ ಇತ್ತ್ಂಡ 'submit your article/poem' ಇಂದೆಟ್ ಇಪ್ಪುನ form ನ್ ಜಿಂಜಾದ್ ಕೊರೊಲಿ. ನಿಕ್ಲೆಗ್ ತುಲು ಬರವು (ಲಿಪಿ) ಓದೆರೆ ಗೊತ್ತುಂಡೆ? ಅಂಚಾಂಡ ಒವ್ವೇ ಒಂಜಿ ಬರವು / ಕಬಿತೆನ್ ದೆತ್‌ದ್ 'tuluscript' option ಗ್ ಪೋದು ಓದೊಲಿ.. ಸೊಲ್ಮೆಲು.</p></br></br>
@@ -96,15 +102,15 @@
                        <li><a href="#">Feedback</a></li>
                    </ul>
                </div>
-               <div class="footer-col">
+               <span class="footer-col2">
                    <h4>follow us</h4>
-                   <div class="social-links">
+                   <span class="social-links">
                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                        <a href="#"><i class="fab fa-twitter"></i></a>
                        <a href="#"><i class="fab fa-instagram"></i></a>
                        
-                   </div>
-               </div>
+                   </span>
+               </span>
            </div>
        </div>
   </footer>
@@ -175,6 +181,12 @@
 		
 	}
 
+
+<!-- loading -->
+
+$(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
 
 </script>
 			
