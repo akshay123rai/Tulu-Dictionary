@@ -9,7 +9,7 @@
 
 				<title>Tulu Dictionary</title>
 </head>
-<body>I
+<body>
 		
 		<!-- loading -->
 		    <div class="loader-wrapper">
@@ -17,21 +17,17 @@
     </div>
 <!-- end -->
 		
+		<!-- menu start -->
+		<nav class="naav"></nav>
 		
-		
-		
-				<div class="center">
-				<div class="search-icon">   
-   <a href="./search.html"><img src="./images/search-icon.png" class="search-icon"></a></div>  
-        	<div class="navbar">		</div>
-        	<div class="list">
-            	<div class="item">
-            </div>
-        
-	        <div class="circle"></div>
-			<div class="menu">
-				<ul>
-					<li><a href="">Home</a></li>
+    <nav id="navbar" class="navbar">
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+       <br><br><br>
+<li><a class="active" href="">Home</a></li>
 			  <li><a href="./search.html">Search</a></li>  
      	<li><a href="./baravu.html">tulu articles/ writings</a></li>
      	<li><a href="./poems/poems.html">tulu poems</a></li>
@@ -40,15 +36,13 @@
      	
      	<li><a href="https://jaitulunad.com"> jai tulunad</a></li>
      
-				</ul>
-			</div>			            
-			<div class="burger">
-				<div class="x"></div>
-				<div class="y"></div>
-    <div class="z"></div>
-			</div>			    
-		</div>
+      </ul>
+    </nav>
+
+<!-- menu end hehehe -->
 		
+		
+				
 			<div class="center">
 			<div class="welcome">
 	<h1 class="center redbg">Introduction</h1>
@@ -56,7 +50,7 @@
 	<p>Welcome you to our website. You can read and submit your articles or poems by filling form in 'submit your article/ poem'. If you can read Tuluscript you can open a article and chng it into Tulu Script. </p>
 	<br><br>
 <h4>	ತುಲು/ತುಳು</h4>
-	<p>ಮೋಕೆಡ್ ಎದುಕೊನುವ. ನಿಕ್ಲೆಗ್ ಮುಲ್ಪ ಓದೆರೆ ಬರವು ಬೊಕ ಕಬಿತೆ ತಿಕ್ಕುಂಡು. ನಿಕುಲ್ ಬರೆತಿನ ಕಬಿತೆ ಇತ್ತ್ಂಡ 'submit your article/poem' ಇಂದೆಟ್ ಇಪ್ಪುನ form ನ್ ಜಿಂಜಾದ್ ಕೊರೊಲಿ. ನಿಕ್ಲೆಗ್ ತುಲು ಬರವು (ಲಿಪಿ) ಓದೆರೆ ಗೊತ್ತುಂಡೆ? ಅಂಚಾಂಡ ಒವ್ವೇ ಒಂಜಿ ಬರವು / ಕಬಿತೆನ್ ದೆತ್‌ದ್ 'tuluscript' option ಗ್ ಪೋದು ಓದೊಲಿ.. ಸೊಲ್ಮೆಲು.</p></br></br>
+	<p>ಮೋಕೆಡ್ ಎದುಕೊನುವ. ನಿಕ್ಲೆಗ್ ಮುಲ್ಪ ಓದೆರೆ ಬರವು ಬೊಕ ಕಬಿತೆ ತಿಕ್ಕುಂಡು. ನಿಕುಲ್ ಬರೆತಿನ ಕಬಿತೆ ಇತ್ತ್ಂಡ 'submit your article/poem'&nbsp; ಇಂದೆಟ್ ಇಪ್ಪುನ formನ್ ಜಿಂಜಾದ್ ಕೊರೊಲಿ. ನಿಕ್ಲೆಗ್ ತುಲು ಬರವು (ಲಿಪಿ) ಓದೆರೆ ಗೊತ್ತುಂಡೆ? ಅಂಚಾಂಡ ಒವ್ವೇ ಒಂಜಿ ಬರವು / ಕಬಿತೆನ್ ದೆತ್‌ದ್ 'tuluscript' optionಗ್ ಪೋದು ಓದೊಲಿ.. ಸೊಲ್ಮೆಲು.</p></br></br>
 	
 			</div>
 			</div>
@@ -118,69 +112,8 @@
  
  
  <!-- js script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
-<!-- menu -->
-			
-	if( 'ontouchstart' in window ){ var click = 'touchstart'; }
-	else { var click = 'click'; }
-
-
-	$('div.burger').on(click, function(){
-
-			if( !$(this).hasClass('open') ){ openMenu(); } 
-			else { closeMenu(); }
-
-	});
-	
-
-	$('div.menu ul li a').on(click, function(e){
-		e.preventDefault();
-		closeMenu();
-	});		
-
-
-	function openMenu(){
-		
-		$('div.circle').addClass('expand');
-					
-		$('div.burger').addClass('open');	
-		$('div.x, div.y, div.z').addClass('collapse');
-		$('.menu li').addClass('animate');
-		
-		setTimeout(function(){ 
-			$('div.y').hide(); 
-			$('div.x').addClass('rotate30'); 
-			$('div.z').addClass('rotate150'); 
-		}, 70);
-		setTimeout(function(){
-			$('div.x').addClass('rotate45'); 
-			$('div.z').addClass('rotate135');  
-		}, 120);
-		
-		
-
-	}
-	
-	function closeMenu(){
-
-		$('div.burger').removeClass('open');	
-		$('div.x').removeClass('rotate45').addClass('rotate30'); 
-		$('div.z').removeClass('rotate135').addClass('rotate150');				
-		$('div.circle').removeClass('expand');
-		$('.menu li').removeClass('animate');
-		
-		setTimeout(function(){ 			
-			$('div.x').removeClass('rotate30'); 
-			$('div.z').removeClass('rotate150'); 			
-		}, 50);
-		setTimeout(function(){
-			$('div.y').show(); 
-			$('div.x, div.y, div.z').removeClass('collapse');
-		}, 70);													
-		
-	}
-
 
 <!-- loading -->
 
@@ -189,6 +122,20 @@ $(window).on("load",function(){
         });
 
 </script>
+ <script>
+ 		var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-65px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+ </script>
+
 			
 </body>
 </html>
